@@ -25,5 +25,18 @@ This command assumes that `$(pwd)` is readable and writable by gid
 
 ## Tags and Pre-installed Packages
 
-See the top-level README.md in
+This branch contains the Dockerfile for **centos7** tag. It has
+following packages installed.
+
+**centos7**
+
+- asciidoc
+- curl
+- git
+- make (Gnu Make)
+- python2-devel
+- rpm-build
+- sudo
+
+For other image tags, see the top-level README.md in
 [each branch](https://github.com/tatsuya6502/docker-pkgbuilder/branches).
