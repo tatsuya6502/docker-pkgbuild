@@ -15,8 +15,8 @@ Suppose you have Makefile in the current working directory (`$(pwd)`),
 try:
 
 ```
-$ alias rpmbuilder7='docker run -it --rm -v "$(pwd)":/home/pkg/src quay.io/cloudian/pkgbuilder:centos7'
-$ rpmbuilder7 make
+$ alias dpkgbuilder='docker run -it --rm -v "$(pwd)":/home/pkg/src quay.io/cloudian/pkgbuilder:ubuntu-1404'
+$ dpkgbuilder7 make
 ```
 
 This command assumes that `$(pwd)` is readable and writable by gid
@@ -25,5 +25,16 @@ This command assumes that `$(pwd)` is readable and writable by gid
 
 ## Tags and Pre-installed Packages
 
-See the top-level README.md in
+This branch contains the Dockerfile for **ubuntu-1404** tag. It has
+following packages installed.
+
+**ubuntu-1404**
+
+- asciidoc
+- curl
+- git
+- make (Gnu Make)
+- sudo
+
+For other image tags, see the top-level README.md in
 [each branch](https://github.com/tatsuya6502/docker-pkgbuilder/branches).
